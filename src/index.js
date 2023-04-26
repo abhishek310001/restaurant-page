@@ -1,5 +1,3 @@
-const print = () => {
-    console.log("Hello world!");
-}
+import pageLoad from './page-load'
 
-print();
+pageLoad();
