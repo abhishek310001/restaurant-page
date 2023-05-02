@@ -4,18 +4,28 @@ const createRestaurantPage = () => {
     mainContent.classList.add('main-content');
 
     const image = document.createElement('img');
-    image.src = 'https://images.unsplash.com/photo-1559069919-c3ccb589630d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80';
+    image.src = 'https://i.pinimg.com/originals/aa/39/a5/aa39a53db7365e1f12f12ac6c5547c6d.jpg';
     image.alt = 'Five Guys Restaurant Photo';
-    image.height = '500';
+    image.height = '300';
     mainContent.appendChild(image);
 
-    const heading = document.createElement('h1');
-    heading.textContent = 'Welcome to Five Guys Restaurant';
-    mainContent.appendChild(heading);
+    const container = document.createElement('div');
+    container.classList.add('hero-container');
 
-    const description = document.createElement('p');
-    description.textContent = 'This is a best place for great food and time to spend with your special ones.';
-    mainContent.appendChild(description);
+    const heading = document.createElement('h1');
+    heading.classList.add('hero-heading');
+    heading.textContent = 'Welcome to Five Guys Restaurant';
+    container.appendChild(heading);
+
+    const description1 = document.createElement('p');
+    description1.textContent = 'This is a best place for great food and time to spend with your special ones.';
+    container.appendChild(description1);
+    
+    const description2 = document.createElement('p');
+    description2.textContent = 'Handcrafted BURGERS & FRIES since 1986';
+    container.appendChild(description2);
+
+    mainContent.appendChild(container);
     content.appendChild(mainContent);
 }
 

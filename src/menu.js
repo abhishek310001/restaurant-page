@@ -4,7 +4,8 @@ const createMenuPage = () => {
     mainContent.classList.add('main-content');
 
     const heading = document.createElement('h1');
-    heading.textContent = "Menu";
+    heading.classList.add('menu-heading');
+    heading.textContent = "MENU";
 
     const menuList = document.createElement('ul');
     const menuItem1 = document.createElement('li');
@@ -20,7 +21,7 @@ const createMenuPage = () => {
     menuItem4.textContent = "Fries";
     menuItem5.textContent = "Milkshake";
     menuItem6.textContent = "Drinks";
-    
+
     menuList.appendChild(menuItem1);
     menuList.appendChild(menuItem2);
     menuList.appendChild(menuItem3);

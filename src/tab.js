@@ -20,27 +20,38 @@ const createTabs = () => {
     tab2.classList.add('tab');
     tab3.classList.add('tab');
 
-    tab1.textContent = "Home";
-    tab2.textContent = "Menu";
-    tab3.textContent = "Contact";
+    tab1.textContent = "HOME";
+    tab2.textContent = "MENU";
+    tab3.textContent = "CONTACT";
     
     tabs.appendChild(tab1);
     tabs.appendChild(tab2);
     tabs.appendChild(tab3);
     content.appendChild(tabs);
+    
+    tab1.style.backgroundColor = '#d9a413';
 
     tab1.addEventListener('click', () => {
         clearContent();
+        tab1.style.backgroundColor = '#d9a413';
+        tab2.style.backgroundColor = '#D21033';
+        tab3.style.backgroundColor = '#D21033';
         createRestaurantPage();
     });
 
     tab2.addEventListener('click', () => {
         clearContent();
+        tab2.style.backgroundColor = '#d9a413';
+        tab1.style.backgroundColor = '#D21033';
+        tab3.style.backgroundColor = '#D21033';
         createMenuPage();
     });
 
     tab3.addEventListener('click', () => {
         clearContent();
+        tab3.style.backgroundColor = '#d9a413';
+        tab2.style.backgroundColor = '#D21033';
+        tab1.style.backgroundColor = '#D21033';
         createContactPage();
     });
 }
