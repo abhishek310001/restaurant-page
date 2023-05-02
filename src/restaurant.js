@@ -1,5 +1,3 @@
-
-
 const createRestaurantPage = () => {
     const content = document.querySelector("#content");
     const mainContent = document.createElement('div');

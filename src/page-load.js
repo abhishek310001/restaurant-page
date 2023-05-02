@@ -1,7 +1,7 @@
-import createRestaurantPage from './restaurant';
+import createTabs from './tab';
 
 const pageLoad = () => {
-    createRestaurantPage();
+    createTabs();
 }
 
 export default pageLoad;
